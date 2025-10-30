@@ -23,7 +23,7 @@ Goal: Help the bank make safer, data-driven loan approval decisions by identifyi
 
 ### 🎞️ Presentation
   
-➡️ [Download Presentation (.pptx)](./Bank Loan.pptx)
+➡️ [Download Presentation (.pptx)](./Bank_Loan.pptx)
 
 ---
 
