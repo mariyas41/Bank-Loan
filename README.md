@@ -15,15 +15,15 @@ Goal: Help the bank make safer, data-driven loan approval decisions by identifyi
 ---
 
 ### 📊 Dashboard & Report
-📂 [Open Report Folder](./reports)  
-➡️ [Download Power BI Report (.pbix)](./reports/bank_loan_dashboard.pbix)
+ 
+➡️ [Download Power BI Report (.pbix)](./bank_loan_dashboard.pbix)
 
 
 ---
 
 ### 🎞️ Presentation
-📂 [Open Presentation Folder](./presentation)  
-➡️ [Download Presentation (.pptx)](./presentation/Bank Loan.pptx)
+  
+➡️ [Download Presentation (.pptx)](.Bank Loan.pptx)
 
 ---
 
