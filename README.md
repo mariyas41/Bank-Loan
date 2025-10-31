@@ -16,7 +16,7 @@ Goal: Help the bank make safer, data-driven loan approval decisions by identifyi
 
 ### 📊 Dashboard & Report
  
-➡️ [Download Power BI Report (.pbix)](./Bank loan report.pbix)
+➡️ [Download Power BI Report (.pbix)](https://drive.google.com/file/d/1ii_fkYFg6W5eWQ4ElD5hkXPNwLHQzuRc/view?usp=sharing)
 
 
 ---
