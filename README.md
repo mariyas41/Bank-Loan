@@ -1,82 +1,85 @@
-# 🏦 Bank Loan Case Study
+🏦 Bank Loan Case Study
+🎯 Objective
 
-### 🎯 Objective
-Analyze historical loan data to uncover key factors influencing loan repayment behavior and identify patterns leading to customer defaults.  
-Goal: Help the bank make safer, data-driven loan approval decisions by identifying high-risk applicants early.
+Analyze historical loan data to uncover key factors influencing repayment behavior and identify early-stage default risks.
+Goal: Enable safer, data-driven loan approvals by flagging high-risk applicants before disbursal.
 
----
+🧰 Tools & Technologies
 
-### 🧰 Tools & Technologies
-- **Power BI** – Data visualization and dashboard creation  
-- **SQL (MySQL Workbench)** – Querying and analysis  
-- **Python (VS Code)** – Data cleaning and machine learning  
-- **Excel** – Pre-processing and validation  
+Power BI: Data visualization & dashboard creation
 
----
+SQL (MySQL Workbench): Data querying & analysis
 
-### 📊 Dashboard & Report
- 
-➡️ [Download Power BI Report (.pbix)](https://drive.google.com/file/d/1ii_fkYFg6W5eWQ4ElD5hkXPNwLHQzuRc/view?usp=sharing)
+Python (VS Code): Data cleaning & machine-learning analysis
 
+Excel: Pre-processing & validation
 
----
+📊 Dashboard & Report
 
-### 🎞️ Presentation
-  
-➡️ [Download Presentation (.pptx)](./Bank_Loan.pptx)
+➡️ Download Power BI Report (.pbix)
 
----
+🎞️ Presentation
 
-### 🔍 Approach
-1. **Data Cleaning & Preparation**  
-   - Reduced dataset from 122 → 32 features by removing duplicates and low-variance columns.  
-   - Fixed invalid ages and extreme income outliers.  
-   - Mean imputation for missing EXT_SOURCE_1–3 values.  
-   - Imported cleaned data into MySQL and Power BI.
+➡️ Download Presentation (.pptx)
 
-2. **Exploratory Data Analysis (EDA)**  
-   - Family size, income, gender, age, education level, and past credit history analyzed.  
-   - SQL queries and Power BI visuals used for trend discovery.
+🔍 Approach
 
-3. **Machine Learning Component**  
-   - Built classification models using **CatBoost** and **LightGBM**.  
-   - Addressed class imbalance (~8% defaulters) using class weights and threshold tuning.  
-   - Optimized for high recall (~85%) to catch potential defaulters early.
+Data Cleaning & Preparation
 
----
+Reduced 122 → 32 features by removing duplicates & low-variance columns.
 
-### 💡 Key Insights
-- **91%** of customers show no repayment issues — overall low default rate.  
-- **Younger** and **less experienced** customers have higher default risks.  
-- **Larger families** show weaker repayment capacity.  
-- **Lower income** and **higher loan amounts** correlate with greater default probability.  
-- **Higher education** levels lead to better repayment reliability.  
-- Past **credit refusals** are a strong indicator of future default.
+Fixed invalid ages & extreme income outliers.
 
----
+Imputed missing EXT_SOURCE_1–3 values with mean substitution.
 
-### ⚙️ Model Evaluation
-- **Model Used:** CatBoost / LightGBM  
-- **Metric Priority:** Recall (detecting defaulters)  
-- **Result:** ~85% recall with balanced precision through threshold tuning.  
-- **Business Use:** Acts as an early risk-alert system to support manual review for flagged applicants.
+Loaded cleaned data into MySQL and Power BI for visualization.
 
----
+Exploratory Data Analysis (EDA)
 
-### 🧭 Business Recommendations
-- Strengthen screening for **younger** or **low-experience** applicants.  
-- Offer **custom loan terms** (smaller amounts or higher rates) to borderline profiles.  
-- Prioritize **low-risk segments** (consistent repayment, strong credit history).  
-- Integrate model insights into loan approval workflow for **data-driven decision-making**.
+Analyzed family size, income, age, education, and credit history.
 
----
+Combined SQL queries with Power BI visuals to uncover default trends.
 
-### 🧠 Key Learnings
-- Real-world data requires **domain understanding and judgment** to clean effectively.  
-- **Simple, interpretable models** can outperform complex ones when aligned with business goals.  
-- Each project iteration improves analysis quality — **reflection drives growth**.  
+Machine-Learning (Interpretative Use Only)
 
----
+Built classification models with CatBoost and LightGBM.
 
-### 📁 Repository Structure
+Addressed class imbalance (~8 % defaulters) using class weights & threshold tuning.
 
+Optimized for recall ≈ 85 % to catch potential defaulters early.
+
+Interpreted feature importance — education, income, and experience were strongest predictors.
+
+💡 Key Insights
+
+91 % of customers show no repayment issues → overall low default rate.
+
+Younger & less experienced applicants show higher default risk.
+
+Larger families correlate with weaker repayment capacity.
+
+Lower income / higher loan amounts = greater default probability.
+
+Higher education improves repayment reliability.
+
+Past credit refusals are the strongest future-default indicator.
+
+⚙️ Model Evaluation
+Metric	Value	Purpose
+Recall	0.85	Catch defaulters early
+Precision	0.70	Maintain review efficiency
+Accuracy	0.91	Balanced model
+Business Use	Risk-alert system	Supports manual review of flagged applicants
+🧠 Key Learnings
+
+Real-world data cleaning requires both statistical and domain understanding.
+
+In credit risk, recall > accuracy — catching defaulters saves money.
+
+Combining SQL + Power BI + Python creates full-cycle analytical insight.
+
+Each iteration improves analysis depth and storytelling clarity.
+
+✍️ Author
+
+Mariya Shaji
