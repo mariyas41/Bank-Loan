@@ -1,80 +1,84 @@
-🏦 Bank Loan Case Study
-🎯 Objective
+# 🏦 **Bank Loan Case Study**
 
-Analyze historical loan data to uncover key factors influencing repayment behavior and identify early-stage default risks.
-Goal: Enable safer, data-driven loan approvals by flagging high-risk applicants before disbursal.
+---
 
-🧰 Tools & Technologies
+## 🎯 **Objective**
+Analyze historical loan data to uncover key factors influencing loan repayment behavior and identify patterns leading to customer defaults.  
+**Goal:** Help the bank make safer, data-driven loan approval decisions by identifying high-risk applicants early.
 
-Power BI: Data visualization & dashboard creation
+---
 
-SQL (MySQL Workbench): Data querying & analysis
+## 🧰 **Tools & Technologies**
+- **Power BI:** Data visualization and dashboard creation  
+- **SQL (MySQL Workbench):** Querying and analysis  
+- **Python (VS Code):** Data cleaning and machine learning  
+- **Excel:** Pre-processing and validation  
 
-Python (VS Code): Data cleaning & model analysis
+---
 
-Excel: Pre-processing & validation
+## 📊 **Dashboard & Report**
 
-📊 Dashboard & Report
+➡️ [**Download Power BI Report (.pbix)**](https://drive.google.com/file/d/1ii_fkYFg6W5eWQ4ElD5hkXPNwLHQzuRc/view?usp=sharing)
 
-➡️ Download Power BI Report (.pbix)
+---
 
-🎞️ Presentation
+### 🎞️ **Presentation**
+  
+➡️ [**Download Presentation (.pptx)**](./Bank_Loan.pptx)
 
-➡️ Download Presentation (.pptx)
+---
 
-🔍 Approach
-🧹 Data Cleaning & Preparation
+## 🔍 **Approach**
 
-Reduced 122 → 32 features by removing duplicates & low-variance columns
+### 🧹 **Data Cleaning & Preparation**
+- Reduced dataset from 122 → 32 features by removing duplicates and low-variance columns.  
+- Fixed invalid ages and extreme income outliers.  
+- Mean imputation for missing `EXT_SOURCE_1–3` values.  
+- Imported cleaned data into **MySQL** and **Power BI** for further analysis.
 
-Fixed invalid ages and extreme income outliers
+### 📈 **Exploratory Data Analysis (EDA)**
+- Analyzed family size, income, gender, age, education level, and past credit history.  
+- SQL queries and Power BI visuals used for trend discovery.
 
-Imputed missing EXT_SOURCE_1–3 values with mean substitution
+### 🤖 **Machine Learning Component (Interpretative Use Only)**
+- Built classification models using **CatBoost** and **LightGBM**.  
+- Addressed class imbalance (~8% defaulters) using class weights and threshold tuning.  
+- Optimized for **high recall (~85%)** to catch potential defaulters early.
 
-Loaded cleaned data into MySQL and Power BI for visualization
+---
 
-📈 Exploratory Data Analysis (EDA)
+## 💡 **Key Insights**
+- **91%** of customers show no repayment issues — overall low default rate.  
+- **Younger and less experienced** customers have higher default risks.  
+- **Larger families** show weaker repayment capacity.  
+- **Lower income and higher loan amounts** correlate with greater default probability.  
+- **Higher education levels** lead to better repayment reliability.  
+- **Past credit refusals** are a strong indicator of future default.
 
-Analyzed family size, income, age, education, and credit history
+---
 
-Combined SQL queries with Power BI visuals to uncover default trends
+## ⚙️ **Model Evaluation**
 
-🤖 Machine Learning (Interpretative Only)
+| Metric | Value | Purpose |
+|:--|:--:|:--|
+| **Recall** | 0.85 | Detect potential defaulters early |
+| **Precision** | 0.70 | Maintain review accuracy |
+| **Accuracy** | 0.91 | Balanced model performance |
+| **Business Use** | Risk-alert system | Supports manual review of flagged applicants |
 
-Built classification models using CatBoost and LightGBM
+---
 
-Addressed 8 % class imbalance using class weights & threshold tuning
+## 🧠 **Key Learnings**
+- Real-world data requires **domain understanding** to clean effectively.  
+- In credit risk, **recall > accuracy** — catching defaulters saves money.  
+- Simple, interpretable models often work best when aligned with business goals.  
+- Combining **SQL + Power BI + Python** gives a complete end-to-end analytical view.
 
-Optimized for recall ≈ 85 % to catch potential defaulters early
+---
 
-Identified education, income, and experience as key predictors
+## ✍️ **Author**
+**Mariya Shaji**  
 
-💡 Key Insights
+---
 
-91 % of customers show no repayment issues → overall low default rate
 
-Younger & less experienced applicants have higher default risk
-
-Larger families show weaker repayment capacity
-
-Lower income / higher loan amounts increase default probability
-
-Higher education improves repayment reliability
-
-Past credit refusals strongly predict future defaults
-
-⚙️ Model Evaluation
-Metric	Value	Purpose
-Recall	0.85	Catch defaulters early
-Precision	0.70	Maintain review efficiency
-Accuracy	0.91	Balanced model
-Business Use	Risk alert system	Support manual review of flagged applicants
-🧠 Key Learnings
-
-Real-world data cleaning demands statistical and domain understanding
-
-In credit risk, recall > accuracy — catching defaulters protects revenue
-
-Combining SQL + Power BI + Python completes the analytics pipeline
-
-Each iteration improves data storytelling and business insight
