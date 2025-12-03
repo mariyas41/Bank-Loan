@@ -99,7 +99,7 @@ It helps analysts focus on the riskiest 66 % of applicants while safely auto-app
 - Visualization Flow → Overview → Demographics → Behavior → Recommendations  
 
 📁 [**Download Power BI Report (.pbix)**](https://drive.google.com/file/d/1ii_fkYFg6W5eWQ4ElD5hkXPNwLHQzuRc/view?usp=sharing)  
-📑 [**View Presentation (.pptx)**](./Bank_Loan.pptx)
+📑 [**View Presentation (.pptx)**](./Bank_Loanfinal.pptx)
 
 
 ---
